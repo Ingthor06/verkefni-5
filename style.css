@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+max-width: 100em;
+margin: 0 auto;
+ 
+}
+h3 {
+text-align: center;
+}
+/******  CSS grid  ******/
+
+/***** 0 - 37.5em ******/
+
+nav {
+  background-color: #33333300;
+  height: 50px;
+  color: #111;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+  
+}
+
+li a {
+  display: grid;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover {
+  background-color: #111;
+  transition: 0.4s;
+  font-size: larger;
+  color: azure;
+}
+
+.col-2 {
+display: grid;
+grid-template-columns: 1fr;      
+}
+.col-3 {
+display: grid;
+grid-template-columns: 1fr; 
+}
+.col-4 {
+display: grid;
+grid-template-columns: 1fr;     
+}
+
+.col-2, .col-3, .col-4 {
+gap:2em;
+row-gap: 1em;
+border:1px solid #888;
+padding: 1em; 
+}
+
+.bg-grunnur {
+  background-image: linear-gradient(rgb(245, 214, 156),rgb(243, 199, 122));
+}
+
+/***************************/
+header,
+footer {
+  background: lightgray;
+  text-align: center;
+  margin-top: 0;
+  padding: 1em;
+}
+/******  Viðmið (Breakpoints)  ******/
+
+@media screen and (min-width:37.5em) {
+.col-4 {
+  grid-template-columns: 1fr 1fr;      /* 2 dálkar 50%*/
+}  
+}
+
+@media screen and (min-width:48em) {
+.col-2 {
+  grid-template-columns: 1fr 1fr;      /* 2 dálkar 50%*/
+}
+.col-3 {
+  grid-template-columns: repeat(2, 1fr); 
+}
+.col-4 {
+  grid-template-columns: repeat(2, 1fr);  
+}  
+
+}
+
+@media screen and (min-width:60em) {
+.col-2 {
+  grid-template-columns: 1fr 1fr;      /* 2 dálkar 50%*/
+}  
+.col-3 {
+  grid-template-columns: repeat(3, 1fr); /* 3 dálkar 33.3333% */
+}
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);      /* 4 dálkar 25%*/
+}  
+.footer {
+  display: flex; 
+  flex-flow: row;  /* ath*/
+  justify-content: space-around;
+  align-items: center;
+  margin:0;
+  padding: 0;
+  list-style-type: none;
+}
+}
+
+/******  Viðmið (Breakpoints)  ******/
+
+@media screen and (min-width:37.5em) {
+  .col-4 {
+    grid-template-columns: 1fr 1fr;      /* 2 dálkar 50%*/
+  }  
+}
+
+@media screen and (min-width:48em) {
+  .col-2 {
+    grid-template-columns: 1fr 1fr;      /* 2 dálkar 50%*/
+  }
+  .col-3 {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .col-4 {
+    grid-template-columns: repeat(2, 1fr);  
+  }  
+
+}
+
+@media screen and (min-width:60em) {
+  .col-2 {
+    grid-template-columns: 1fr 1fr;      /* 2 dálkar 50%*/
+  }  
+  .col-3 {
+    grid-template-columns: repeat(3, 1fr); /* 3 dálkar 33.3333% */
+  }
+  .col-4 {
+    grid-template-columns: repeat(4, 1fr);      /* 4 dálkar 25%*/
+  }  
+  .footer {
+    display: flex; 
+    flex-flow: row;  /* ath*/
+    justify-content: space-around;
+    align-items: center;
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Dead V3</title>
+    <link rel="stylesheet" type="text/css" href="framhald.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>The Walking Dead</h1>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<div class="topnav" id="myTopnav">
+		  <a href="index.html" class="active">Home</a>
+		  <a href="#season1">Season 1</a>
+		  <a href="#season2">Season 2</a>
+		  <a href="#season3">Season 3</a>
+		  <a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)">Wiki</a>
+		  <a href="https://www.youtube.com/@TheWalkingDead">Youtube</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		</div>
+	  <!-- Script -->
+	  <script>
+	    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+	  </script>
+      </header>
+      <main>
+        <div id="season1" class="row">
+          <div class="col">
+            <h2>Season 1</h2>
+            <p>The Walking Dead season 1 starts with Rick Grimes, a sheriff's deputy, waking from a coma after being shot. He encounters a world filled with 'walkers', When awoken he finds himself in a Zombie Apocalypse. Not knowing what to do he sets out to find his family, after he's done that, he gets connected to a group to become the leader. He takes charge and tries to help this group of people survive, find a place to live and get them food. This show is all about survival, the risks and the things you'll have to do to survive and heads to Georgia to reunite with his family - wife Lori and son, Carl.</p>
+          </div>
+          <div id="season2" class="col">
+            <h2>Season 2</h2>
+            <p>The Walking Dead recap: season 2 Carl, meanwhile, eventually recovers from his wounds and Lori discovers she is pregnant. Glenn starts a relationship with Maggie, though a late-night meet-up eventually turns sour after Glenn discovers Hershel's barn is filled with captive walkers.</p>
+          </div>
+          <div id="season3" class="col">
+            <h2>Season 3</h2>
+            <p>Season 3 kicks off eight months after season 2 ended, with Rick and the survivors taking back a prison from the walkers to use as a new home. Lori, meanwhile, is heavily pregnant with her second child. During the battle for the prison, Hershel is bitten on the leg and has it amputated to avoid turning.Season 3 kicks off eight months after season 2 ended, with Rick and the survivors taking back a prison from the walkers to use as a new home. Lori, meanwhile, is heavily pregnant with her second child. During the battle for the prison, Hershel is bitten on the leg and has it amputated to avoid turning.</p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <nav>
+			<h4>DL listi </h4>
+			<dl><!--Description list, nafn tölvupóstur og áfangi-->
+			<dt>Nafn:</dt>
+			  <dd>Ingþór Logi</dd>
+			  <dd>ingthor.logi@gmail.com</dd><!--tölvupóstur-->
+			  <dd>VEFÞ1VG</dd><!--áfangi-->
+			  <dd>Tölvubraut</dd>
+			</dl>
+		</nav>
+      </footer>
+    </div>
+  </body>
+</html>
