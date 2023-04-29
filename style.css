@@ -56,8 +56,8 @@ a:hover, a:active {
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 -2px 8px rgb(255, 0, 0);
-  color: rgb(255, 166, 65);
+  text-shadow: 0 -2px 8px rgb(255, 247, 0);
+  color: rgb(8, 165, 0);
 }
 .col-2,
 .col-3 {
