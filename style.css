@@ -36,7 +36,7 @@ a:hover, a:active {
   margin: 0;
 }
 .body-bg {
-  background-image: linear-gradient(to bottom, rgb(9, 0, 51), rgb(49, 10, 0));    
+  background-image: linear-gradient(to bottom, rgb(9, 0, 51), rgb(2, 0, 28));    
   color: white;
 }
 
